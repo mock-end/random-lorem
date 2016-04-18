@@ -11,8 +11,6 @@ describe('random-lorem: ', function () {
     for (var i = 0; i < 100; i++) {
       expect(randomLorem()).to.have.length.within(1, 10);
     }
-
-    expect(randomLorem()).to.have.length.within(1, 10);
   });
 
   it('randomLorem(8)', function () {
