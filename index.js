@@ -1,7 +1,6 @@
 'use strict';
 
 var clamp          = require('clamp');
-var randomChar     = require('random-char');
 var randomNatural  = require('random-natural');
 var randomSyllable = require('random-syllable');
 
@@ -26,7 +25,7 @@ module.exports = function (min, max) {
   var result = '';
 
   while (result.length < length) {
-    result += randomChar('lower');
+    result += randomSyllable();
   }
 
   result = result.substring(0, length);
