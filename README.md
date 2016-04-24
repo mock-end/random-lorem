@@ -59,7 +59,6 @@ This means `randomLorem(2, 4)` would return a lorem with a length either `2`, `3
 
 ## Related
 
-- [random-lorem](https://github.com/mock-end/random-lorem) - Return a random lorem world.
 - [random-title](https://github.com/mock-end/random-title) - Return a random title.
 - [random-sentence](https://github.com/mock-end/random-sentence) - Return a random sentence.
 - [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph.
