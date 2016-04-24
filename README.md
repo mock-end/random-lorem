@@ -28,14 +28,14 @@ var randomLorem = require('random-lorem');
 // - randomLorem(min, max);
 ```
 
-By default, return a string with the length between `1` and `20`:
+By default, return a string with the length between `2` and `20`:
 
 ```js
 randomLorem();
 // => ksifopmelq
 ```
 
-Can optionally provide the max length:
+Can optionally provide the max length, and the length should be between `2` and `max`:
 
 ```js
 randomLorem(8);
@@ -54,7 +54,7 @@ randomLorem(5, 5); // should only have 5 chars.
 
 **Note**: these min and max are **inclusive**, so they are included in the range. 
 
-This means `randomLorem(2, 4)` return the lorem would have a length either `2`, `3` or `4`.
+This means `randomLorem(2, 4)` would return a lorem with a length either `2`, `3` or `4`.
 
 
 ## Related
@@ -63,6 +63,7 @@ This means `randomLorem(2, 4)` return the lorem would have a length either `2`, 
 - [random-title](https://github.com/mock-end/random-title) - Return a random title.
 - [random-sentence](https://github.com/mock-end/random-sentence) - Return a random sentence.
 - [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph.
+
 
 ## Contributing
 
