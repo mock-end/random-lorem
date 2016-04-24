@@ -1,7 +1,7 @@
 {
   "name": "random-lorem",
-  "version": "1.0.0",
-  "description": "Generate a random world.",
+  "version": "1.0.1",
+  "description": "Return a random world.",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "clamp": "^1.0.1",
-    "random-char": "^1.0.1",
-    "random-natural": "^1.0.0"
+    "random-char": "^1.0.2",
+    "random-natural": "^1.0.2"
   }
 }
