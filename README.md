@@ -1,6 +1,6 @@
 # random-lorem
 
-> Return a random lorem world.
+> Return a semi-pronounceable random (nonsense) word.
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/mock-end/random-lorem/blob/master/LICENSE)
 
@@ -32,7 +32,7 @@ By default, return a string with the length between `2` and `20`:
 
 ```js
 randomLorem();
-// => ksifopmelq
+// => tavnamgi
 ```
 
 Can optionally provide the max length, and the length should be between `2` and `max`:
@@ -46,10 +46,10 @@ Can optionally provide min and max length:
 
 ```js
 randomLorem(4, 9);
-// => yuqwdf
+// => bappada
 
 randomLorem(5, 5); // should only have 5 chars.
-// => ksijh
+// => ralve
 ```
 
 **Note**: these min and max are **inclusive**, so they are included in the range. 
@@ -59,10 +59,10 @@ This means `randomLorem(2, 4)` would return a lorem with a length either `2`, `3
 
 ## Related
 
-- [random-title](https://github.com/mock-end/random-title) - Return a random title.
-- [random-sentence](https://github.com/mock-end/random-sentence) - Return a random sentence.
-- [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph.
-
+- [random-syllable](https://github.com/mock-end/random-syllable) - Return a semi-speakable syllable, 2 or 3 letters.
+- [random-title](https://github.com/mock-end/random-title) - Return a random title populated by semi-pronounceable random (nonsense) words.
+- [random-sentence](https://github.com/mock-end/random-sentence) - Return a random sentence populated by semi-pronounceable random (nonsense) words.
+- [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph generated from sentences populated by semi-pronounceable random (nonsense) words.
 
 ## Contributing
 

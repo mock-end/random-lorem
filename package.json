@@ -1,7 +1,7 @@
 {
   "name": "random-lorem",
-  "version": "1.0.1",
-  "description": "Return a random world.",
+  "version": "1.0.2",
+  "description": "Return a semi-pronounceable random (nonsense) word.",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
@@ -14,6 +14,7 @@
   "keywords": [
     "world",
     "lorem",
+    "nonsense",
     "random",
     "randomly",
     "randomize",
@@ -45,6 +46,7 @@
   "dependencies": {
     "clamp": "^1.0.1",
     "random-char": "^1.0.2",
-    "random-natural": "^1.0.2"
+    "random-natural": "^1.0.2",
+    "random-syllable": "^1.0.0"
   }
 }
