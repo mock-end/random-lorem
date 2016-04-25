@@ -1,6 +1,6 @@
 {
   "name": "random-lorem",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Return a semi-pronounceable random (nonsense) word.",
   "main": "index.js",
   "scripts": {
