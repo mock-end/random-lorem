@@ -18,44 +18,56 @@ $ npm install --save random-lorem
 
 > For more use-cases see the [tests](https://github.com/mock-end/random-lorem/blob/master/test/spec/index.js)
 
-
 ```js
 var randomLorem = require('random-lorem');
 
 // API
-// - randomLorem();
-// - randomLorem(max);
-// - randomLorem(min, max);
+// - randomLorem([options]);
+
+// options
+// - syllables
+// - length
+// - min
+// - max
 ```
 
-By default, return a string with the length between `2` and `20`:
+The word is returned in all lower case.
 
 ```js
 randomLorem();
-// => tavnamgi
+// => 'tavnamgi'
 ```
 
-Can optionally provide the max length, and the length should be between `2` and `max`:
+Default is a word with a random number of syllables from `1` to `3`.
+
+*This length is chosen as it works out to the average word length of `~5-6` chars which seems about right.*
+
+Can optionally specify a number of syllables which the word will have.
+
+Note these are not syllables in the strict language definition of the word, but syllables as we’ve defined here which is `2` or `3` characters, mostly alternating between vowel and consanant. This is the about the best we can do with purely random generation.
 
 ```js
-randomLorem(8);
-// => asdjlk
+randomLorem({ syllables: 3 });
+// => 'tavnamgi'
 ```
 
-Can optionally provide min and max length:
+
+Can optionally specify a length and the word will obey that bounding:
 
 ```js
-randomLorem(4, 9);
-// => bappada
-
-randomLorem(5, 5); // should only have 5 chars.
-// => ralve
+randomLorem({ length: 5 });
+// => 'ralve'
 ```
 
-**Note**: these min and max are **inclusive**, so they are included in the range. 
+In this case these two options are mutually exclusive, that is they cannot be combined as they often make no sense. It wouldn’t be possible to have a word with `7` syllables and a length of `5` or a length of `30` but `2` syllables.
 
-This means `randomLorem(2, 4)` would return a lorem with a length either `2`, `3` or `4`.
 
+Can optionally provide `min` and `max`, then with a random length:
+
+```js
+randomLorem({ min: 2, max: 12 });
+// => 'bappada'
+```
 
 ## Related
 
@@ -63,6 +75,7 @@ This means `randomLorem(2, 4)` would return a lorem with a length either `2`, `3
 - [random-title](https://github.com/mock-end/random-title) - Return a random title populated by semi-pronounceable random (nonsense) words.
 - [random-sentence](https://github.com/mock-end/random-sentence) - Return a random sentence populated by semi-pronounceable random (nonsense) words.
 - [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph generated from sentences populated by semi-pronounceable random (nonsense) words.
+
 
 ## Contributing
 
