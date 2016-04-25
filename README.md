@@ -69,6 +69,8 @@ randomLorem({ min: 2, max: 12 });
 // => 'bappada'
 ```
 
+**Note**: these min and max are **inclusive**, so they are included in the range. 
+
 ## Related
 
 - [random-syllable](https://github.com/mock-end/random-syllable) - Return a semi-speakable syllable, 2 or 3 letters.
